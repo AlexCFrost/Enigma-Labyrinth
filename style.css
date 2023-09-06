@@ -1,156 +1,152 @@
 @font-face {
-    font-family: "warrior";
-    src: url('./assets/TheLastShurikenRegular-GOw5a.ttf');
+  font-family: "warrior";
+  src: url("./assets/TheLastShurikenRegular-GOw5a.ttf");
 }
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
 /* for home page */
-.startpage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'warrior';
-    background-image: url("./assets/start.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.startpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "warrior";
+  background-image: url("./assets/start.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-
-.name{
-    font-size: 4vh;
-    background: linear-gradient(to right,hsl(162, 88%, 46%),hsl(273, 71%, 60%));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.name {
+  font-size: 4vh;
+  background: linear-gradient(to right, hsl(162, 88%, 46%), hsl(273, 71%, 60%));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.warrior{
-    margin-top: 4vh;
-    font-size: 5vh;
-    background: linear-gradient(to right,hsl(162, 88%, 46%),hsl(273, 71%, 60%));
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
+.warrior {
+  margin-top: 4vh;
+  font-size: 5vh;
+  background: linear-gradient(to right, hsl(162, 88%, 46%), hsl(273, 71%, 60%));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
-.play-button{
-    font-family: "warrior";
-    letter-spacing: 4px;
-    margin-top: 12vh;
-    font-size: larger;
-    height: 8vh;
-    width: 25vh;
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    transition: all 0.3s;
-    cursor: pointer;
-    mix-blend-mode: lighten;
-    box-shadow: inset 0 0 10px hsl(273, 72%, 60%),0 0 5px 1px hsl(273, 72%, 60%) ;
-}
-.play-button:hover{
-    color:  hsl(166, 100%, 52%);
-    background-color:hsl(273, 72%, 60%);
-    box-shadow: inset 5px 5px 10px hsl(273, 48%, 30%),0 0 10px 5px hsla(273, 72%, 60%, 0.425) 
+.play-button {
+  font-family: "warrior";
+  letter-spacing: 4px;
+  margin-top: 12vh;
+  font-size: larger;
+  height: 8vh;
+  width: 25vh;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  mix-blend-mode: lighten;
+  box-shadow: inset 0 0 10px hsl(273, 72%, 60%), 0 0 5px 1px hsl(273, 72%, 60%);
 }
 
-.inputbox{
-    width: 30vh;
-    height: 5vh;
-    border: none;
-    outline: none;
-    border-radius: 40px;
+.play-button:hover {
+  color: hsl(166, 100%, 52%);
+  background-color: hsl(273, 72%, 60%);
+  box-shadow: inset 5px 5px 10px hsl(273, 48%, 30%),
+    0 0 10px 5px hsla(273, 72%, 60%, 0.425);
 }
 
+.inputbox {
+  width: 30vh;
+  height: 5vh;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding: 8px;
+}
 
 /* For game.html */
-
-.gamepage{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'warrior';
-    background-image: url(./assets/game.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.gamepage {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+  font-family: "warrior";
+  background-image: url(./assets/game.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.message{
-    font-family: "warrior";
-    margin-top: 10vh;
-    font-size: 5vh;
-    color: rgb(163, 161, 161);
+.message {
+  font-family: "warrior";
+  margin-top: 10vh;
+  font-size: 5vh;
+  padding-left: 3vh;
+  color: rgb(163, 161, 161);
 }
 
-.arrowkeys{
-    width: 20vh;
+.canvas{
+  height: 500px;
+  width: 500px;
+  margin: 50px auto;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    min-height: 100vh;
-    font-family: 'warrior';
-    background-image: url(./assets/game.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  min-height: 100vh;
+  font-family: "warrior";
+  background-image: url(./assets/game.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.time{
-    width: 91px;
-    height: 75px;
-    margin-top: 1vh;
-    margin-left: 1vh;
-    border-radius: 30%;
-    background-color: antiquewhite;
+.time {
+  width: 9vh;
+  height: 9vh;
+  margin-top: 1vh;
+  margin-left: 1vh;
+  border-radius: 35%;
+  background-color: antiquewhite;
 }
 
 /* for game overpage page */
-.wonpage{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: 'warrior';
-    background-image: url(./assets/won.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.wonpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "warrior";
+  background-image: url(./assets/won.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.wonmessage{
-    font-size: 5vh;
-    text-align: center;
-    padding: 1vh;
-    color: rgb(170, 170, 170);
+.wonmessage {
+  font-size: 5vh;
+  text-align: center;
+  padding: 1vh;
+  color: rgb(170, 170, 170);
 }
 
-.replaybutton{
-    font-size: 10vh;
-    height: 8vh;
-    border-radius: 40px;
-    border: none;
-    outline: none;
-    color: rgb(255, 45, 45);
-    cursor: pointer;
+.replaybutton {
+  font-size: 10vh;
+  height: 8vh;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  color: rgb(255, 45, 45);
+  cursor: pointer;
 }
-
-
-
-
-
-
-
 

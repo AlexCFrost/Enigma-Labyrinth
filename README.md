@@ -1,2 +1,3 @@
 # Enigma-Labyrinth
-A Maze game
+
+A simple game built with Vanilla HTML, CSS and Javascript.
