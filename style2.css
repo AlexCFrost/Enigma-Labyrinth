@@ -1,0 +1,10 @@
+body{
+    background-color: #03011f;
+    font-family: "Source Sans Pro";
+    color: #6cacc5;
+    text-align: center;
+}
+   
+canvas {
+    margin: 50px auto;
+} 

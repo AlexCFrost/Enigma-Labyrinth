@@ -69,57 +69,8 @@
   padding: 8px;
 }
 
-/* For game.html */
-.gamepage {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
-  min-height: 100vh;
-  font-family: "warrior";
-  background-image: url(./assets/game.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.message {
-  font-family: "warrior";
-  margin-top: 10vh;
-  font-size: 5vh;
-  padding-left: 3vh;
-  color: rgb(163, 161, 161);
-}
-
-.canvas{
-  height: 500px;
-  width: 500px;
-  margin: 50px auto;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  min-height: 100vh;
-  font-family: "warrior";
-  background-image: url(./assets/game.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.time {
-  width: 9vh;
-  height: 9vh;
-  margin-top: 1vh;
-  margin-left: 1vh;
-  border-radius: 35%;
-  background-color: antiquewhite;
-}
-
 /* for game overpage page */
+
 .wonpage {
   display: flex;
   flex-direction: column;
