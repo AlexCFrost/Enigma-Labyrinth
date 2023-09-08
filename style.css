@@ -69,6 +69,27 @@
   padding: 8px;
 }
 
+/* for story page */
+.story{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  min-height: 100vh;
+  font-family: "warrior";
+  background-image: url("./assets/game.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.message{
+    font-size: 5vh;
+    margin-top: 10vh;
+    padding: 3vh;
+    color: rgb(148, 148, 148);
+}
+
 /* for game overpage page */
 
 .wonpage {
@@ -88,7 +109,7 @@
   font-size: 5vh;
   text-align: center;
   padding: 1vh;
-  color: rgb(170, 170, 170);
+  color: rgb(146, 144, 144);
 }
 
 .replaybutton {

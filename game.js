@@ -21,6 +21,9 @@ document.addEventListener("DOMContentLoaded", function () {
   var leftPressed = false;
   var upPressed = false;
   var downPressed = false;
+
+  // The matrix for maze game "1" denotes wall, "0" denotes path.
+
   const map = [
     [1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
     [1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1],
@@ -54,12 +57,15 @@ document.addEventListener("DOMContentLoaded", function () {
         tiles[i][j] = {x:0, y:0, type: ""};
       }
     };
-  
+
+    //To draw the background 
   
   function drawBoard() {
    ctx.fillStyle="#03011f"; 
    ctx.fillRect(0,0,canvas.width,canvas.height);
   }
+
+  // TO draw the maze
   
   function drawMaze(){
     for (var i = 0;i<map.length; i++){
@@ -77,16 +83,22 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
+
+  // TO draw the wall
   
   function drawWall(x,y){
     ctx.fillStyle = "#6cacc5";
     ctx.fillRect(x,y,tileSize,tileSize);
   }
   
+// To draw the path
+
   function drawEmpty(x, y){
     ctx.fillStyle = "#03011f";
     ctx.fillRect(x, y, tileSize, tileSize);
   }
+
+  // To draw the player
   
   function drawPlayer(){
     ctx.beginPath();
@@ -114,12 +126,11 @@ document.addEventListener("DOMContentLoaded", function () {
   
   function checkCollision(){
     if (player.x + tileSize > canvas.width){
-      console.log("That is where you started");
+      console.log("Warrior's starting position!");
       player.x = player.prevPos.x;
     }
     if (player.y + player.radius < 0){
-      console.log("You won!");
-      // player.y = player.prevPos.y;
+      console.log("Hehehe you won kid!");
       cancelAnimationFrame(animation);
       gameOver();
     }
@@ -167,12 +178,6 @@ document.addEventListener("DOMContentLoaded", function () {
       downPressed = false;
     }
   })
-  
-  
-  
-  // drawBoard();
-  // drawMaze();
-  // drawPlayer();
   
   function update(){
     updatePosition();
