@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d")
-  
+
   var tileSize = 25;
   
   canvas.height = tileSize * 22;
