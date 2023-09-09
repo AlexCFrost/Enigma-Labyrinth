@@ -41,7 +41,7 @@
   font-family: "warrior";
   letter-spacing: 4px;
   margin-top: 12vh;
-  font-size: larger;
+  font-size: 4vh;
   height: 8vh;
   width: 25vh;
   border-radius: 40px;
@@ -121,4 +121,3 @@
   color: rgb(255, 45, 45);
   cursor: pointer;
 }
-
