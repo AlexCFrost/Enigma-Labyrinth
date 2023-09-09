@@ -2,9 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d")
-  // Play background music
-
-
 
   var tileSize = 25;
   
@@ -61,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     };
 
-    //To draw the background 
+    //To draw the board
   
   function drawBoard() {
    ctx.fillStyle="#03011f"; 
