@@ -1,7 +1,10 @@
+
+
 document.addEventListener("DOMContentLoaded", function () {
 
   var canvas = document.getElementById("myCanvas");
   var ctx = canvas.getContext("2d")
+
 
   var tileSize = 25;
   
@@ -190,4 +193,11 @@ document.addEventListener("DOMContentLoaded", function () {
   }
   
   animation = requestAnimationFrame(update);
+  
+function playsound(audioName,loop){
+  let audio = new Audio(audioName)
+  audio.loop = loop
+  audio.play();
+}
+playsound("Eren.mp3",true)
 });
